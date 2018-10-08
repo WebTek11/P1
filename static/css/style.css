@@ -40,6 +40,8 @@ section {
 }
 
 footer {
+  border-top: solid 1px black;
+  padding-top: 10px;
   font-size: 90%;
   margin-top: 40px;
   text-align: center;
@@ -47,10 +49,12 @@ footer {
 
 
 table {
+  column-width: 300px;
   border-collapse: collapse;
 }
 
 td {
+  padding: 2px;
   border: 1px solid black;
 }
 
