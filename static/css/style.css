@@ -67,6 +67,11 @@ img {
 }
 
 .mobile {
-  width: 25%;
+  max-width: 25%;
   margin: 10px;
+  padding: 30px 8px;
+  border: 1.2px solid black;
+  background-color: white;
+  border-radius: 30px;
+  height: 320px;
 }

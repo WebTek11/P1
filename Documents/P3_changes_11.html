@@ -371,29 +371,73 @@ bilder (logoer og ikoner) er samlet i en egen mappe.</p>
 
 
 <h2>Modularitet</h2>
-<p>Lars-Olav har implementert modularitet for footer og navbar ved bruk av JavaScript og CSS. Alle sidene har samme navbar og footer (selv om navbaren styles annerledes på fremsiden), og disse settes derfor inn av commonMenu.js. En kombinasjon av felles CSS og JS gjør at vi har samme navbar og footer på alle sidene, at disse oppfører seg likt og tilpasser seg små skjermer (egen layout for skjermer smalere enn eller lik 960 px).
-May Helen har videre implementert imageExpander.js for å utvide thumbnail-bilder til store bilder på noen av undersidene. Nettsiden har i stor grad felles CSS i common.css og underpage.css, noe som gjør at undersidene ser like ut. Vi bruker samme klasser og IDer på HTML-elementene på de forskjellige undersidene der vi kan, noe som gjør at CSS-reglene for tekstbokser, overskrifter og bildeplassering og lignende gjenbrukes.
-Håvard har hatt ansvar for at CSS som endrer menyen ut fra hvilken side du er inne på også er gjort i JS i stedet for å måtte ha 1 ekstra CSS-fil per underside.</p>
+<p>Lars-Olav har implementert modularitet for footer og
+navbar ved bruk av JavaScript og CSS. Alle sidene har samme navbar og footer
+(selv om navbaren styles annerledes på fremsiden), og disse settes derfor inn av
+commonMenu.js. En kombinasjon av felles CSS og JS gjør at vi har samme navbar og
+footer på alle sidene, at disse oppfører seg likt og tilpasser seg små skjermer
+(egen layout for skjermer smalere enn eller lik 960 px). May Helen har videre
+implementert imageExpander.js for å utvide thumbnail-bilder til store bilder på
+noen av undersidene. Nettsiden har i stor grad felles CSS i common.css og
+underpage.css, noe som gjør at undersidene ser like ut. Vi bruker samme klasser
+og IDer på HTML-elementene på de forskjellige undersidene der vi kan, noe som
+gjør at CSS-reglene for tekstbokser, overskrifter og bildeplassering og lignende
+gjenbrukes. Håvard har hatt ansvar for at CSS som endrer menyen ut fra hvilken
+side du er inne på også er gjort i JS i stedet for å måtte ha 1 ekstra CSS-fil
+per underside.</p>
 
 <h2>Responsivt design</h2>
-<p>Vi har laget siden svært responsiv, og den skal støtte alle skjermstørrelser. Vi har et brudd på 960 px, der egne regler slår inn. Dette gjør at du ved en vindusbredde på 961 px eller mer får servert “desktop”-versjonen av nettsiden, men ellers får servert en komprimert versjon som fungerer bedre på små touchskjermer. Dette oppnås ved en kombinasjon av CSS, JavaScript og HTML. Nettsiden har altså 2 forskjellige oppsett som sammen gjør at den skal se bra ut uansett hvor liten eller stor skjerm brukeren har.</p>
+<p>Vi har laget siden svært responsiv, og den skal
+støtte alle skjermstørrelser. Vi har et brudd på 960 px, der egne regler slår
+inn. Dette gjør at du ved en vindusbredde på 961 px eller mer får servert
+“desktop”-versjonen av nettsiden, men ellers får servert en komprimert versjon
+som fungerer bedre på små touchskjermer. Dette oppnås ved en kombinasjon av CSS,
+JavaScript og HTML. Nettsiden har altså 2 forskjellige oppsett som sammen gjør
+at den skal se bra ut uansett hvor liten eller stor skjerm brukeren har.</p>
 
-<p>Vi har blant annet brukt picture-tagen i HTML for å laste inn ulike størrelser av bakgrunnsbildet avhengig av skjermstørrelse. Picture-tagen gjør at vi kan tilby et sett av bilder, spesifisere hvilket som skal brukes basert på oppløsning og laste ned kun ett av disse. Vi har prøvd å tilby bilder som passer til skjermstørrelse der vi kan, slik at siden laster så fort som mulig. Siden vil derfor laste betydelig raskere på små skjermer. Dette er spesielt nyttig siden små skjermer ofte betyr telefoner på mobildata, der brukeren ikke har ubegrenset datakvote og kunne blitt irritert om vi sløste unødig med denne kvoten.</p>
+<p>Vi har blant annet brukt picture-tagen i HTML for å laste inn ulike
+størrelser av bakgrunnsbildet avhengig av skjermstørrelse. Picture-tagen gjør at
+vi kan tilby et sett av bilder, spesifisere hvilket som skal brukes basert på
+oppløsning og laste ned kun ett av disse. Vi har prøvd å tilby bilder som passer
+til skjermstørrelse der vi kan, slik at siden laster så fort som mulig. Siden
+vil derfor laste betydelig raskere på små skjermer. Dette er spesielt nyttig
+siden små skjermer ofte betyr telefoner på mobildata, der brukeren ikke har
+ubegrenset datakvote og kunne blitt irritert om vi sløste unødig med denne
+kvoten.</p>
 
-<p>Ved å spesifisere fontstørrelser i em stedet for px skalerer teksten bedre til det brukeren har satt som standard skriftstørrelse i nettleseren. Dette kan noen steder føre til små grafiske problemer hvis skriftstørrelsen settes veldig høyt eller bredden ekstremt liten, men det viktigste er at teksten er lesbar.</p>
+<p>Ved å spesifisere fontstørrelser i em stedet for px skalerer teksten bedre
+til det brukeren har satt som standard skriftstørrelse i nettleseren. Dette kan
+noen steder føre til små grafiske problemer hvis skriftstørrelsen settes veldig
+høyt eller bredden ekstremt liten, men det viktigste er at teksten er
+lesbar.</p>
 
-<p>Designet på mindre vindu/skjermer er betydelig forandret i forhold til store vinduer. Felles for alle sidene er navbaren byttet ut med en hamburgermeny, denne kan nås oppe til høyre til enhver tid. Selve menyen er her sentrert med alle undersidene under hverandre, samt logoen øverst som fremdeles brukes til å nå fremsiden. Menyen gjemmer alt innhold utenom bakgrunnsbilde. Footeren sentrerer nå også elementene under hverandre.</p>
+<p>Designet på mindre vindu/skjermer er betydelig forandret i forhold til store
+vinduer. Felles for alle sidene er navbaren byttet ut med en hamburgermeny,
+denne kan nås oppe til høyre til enhver tid. Selve menyen er her sentrert med
+alle undersidene under hverandre, samt logoen øverst som fremdeles brukes til å
+nå fremsiden. Menyen gjemmer alt innhold utenom bakgrunnsbilde. Footeren
+sentrerer nå også elementene under hverandre.</p>
 <img src="../static/img/image3.png" class="mobile" alt="footer">
 <img src="../static/img/image8.png" class="mobile" alt="footer">
-<p>På fremsiden er fremdeles det heldekkende fremsidebilde, den sentrerte logoen og åpningstide-rboksen (som er flyttet ned til høyre) det første som møter deg. Fremsidebildet er derimot gjort om til å operere som bakgrunnsbilde for fremsiden. Ved åpen hamburgermeny tillegges “opacity” til fremsidebildet for lesebarhet (denne stilen er allerede til stede på alle undersidene og trengs derfor ikke tillegges der). Tekstboksene har videre også endret seg, de dekker nå nærmest hele vinduets bredde. Bildene i hver seksjon er også fjernet. Dette med tanke på å minske hvor mye data som må nedlastes gjennom for eksempel mobildata, siden bildene kan finnes inne på de forskjellige undersidene. Høyden til seksjonene er lenger ikke bestemt av skjermhøyden men fyller ut hvor stor plass de trenger ut ifra hvor stor plass teksten tar.</p>
+<p>På fremsiden er fremdeles det heldekkende fremsidebilde, den sentrerte logoen og
+åpningstide-rboksen (som er flyttet ned til høyre) det første som møter deg.
+Fremsidebildet er derimot gjort om til å operere som bakgrunnsbilde for
+fremsiden. Ved åpen hamburgermeny tillegges “opacity” til fremsidebildet for
+lesebarhet (denne stilen er allerede til stede på alle undersidene og trengs
+derfor ikke tillegges der). Tekstboksene har videre også endret seg, de dekker
+nå nærmest hele vinduets bredde. Bildene i hver seksjon er også fjernet. Dette
+med tanke på å minske hvor mye data som må nedlastes gjennom for eksempel
+mobildata, siden bildene kan finnes inne på de forskjellige undersidene. Høyden
+til seksjonene er lenger ikke bestemt av skjermhøyden men fyller ut hvor stor
+plass de trenger ut ifra hvor stor plass teksten tar.</p>
 
-<p>Det originale designet kan for det meste gjenkjennes på undersidene. Den største endringen er at nå lastes bildene under tekstboksene. Tekstboksene dekker som på fremsiden store deler av bredden på siden.</p>
+<p>Det originale designet kan for det meste gjenkjennes på undersidene. Den
+største endringen er at nå lastes bildene under tekstboksene. Tekstboksene
+dekker som på fremsiden store deler av bredden på siden.</p>
 <img src="../static/img/image2.png" class="mobile" alt="footer">
 <img src="../static/img/image6.png" class="mobile" alt="footer">
 <footer>
-  <p>
-      May Helen, Håvard, Jonatan, Lars-Olav og Marte
-  </p>
+  <p> May Helen, Håvard, Jonatan, Lars-Olav og Marte </p>
 </footer>
   </body>
 </html>
