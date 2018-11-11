@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8">
+  <title>P4 - Prosjektendringer</title>
+  <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>P4 - Nettsidetesting</h1>
+    <h3>Gruppe 11:</h3>
+    <h3>May Helen, Håvard, Jonatan, Lars-Olav og Marte</h3>
+    <p>08.11.2018</p>
+  </header>
+  <h2>
+    Kunden
+</h2>
+<p>
+    Vår kunde er Etikken BA, en kolonialbutikk i Trondheim som blant annet
+    tilbyr økologisk, fairtrade og kortreist mat. Kontaktpersonen vår er Alan
+    Lorin, som driver butikken på vegne av sin bror.
+</p>
+<h2>
+    Testoppsettet
+</h2>
+<p>
+    Ved brukertesting er det viktig å ikke avsløre hvilke deler av løsningen vi
+    ønsker å teste. Dette kan villede testobjektet og kan føre til uærlige
+    svar. Det er derimot essensielt at bruker får tilstrekkelig informasjon om
+    hvem gruppen er, om prosjektet og hvilke oppgaver vedkommende skal gjøre.
+    Det skal altså være fokus på menneskene og deres oppgaver, men det er
+    viktig å få fram at det er løsningen som skal testes, ikke personen.
+</p>
+
+<p>
+    Gjennom brukertesting søker man empirisk bevis på hvordan man kan forbedre
+    bruken. Den skal fokusere på å identifisere frustrasjons- og
+    forvirringspunktene ved grensesnittet. For å kartlegge disse punktene skal
+    man ta utgangspunkt i typisk sluttbrukermål. Sluttbrukermålene baseres på
+    personasene definert i startfasen av prosjektet. Oppgavene skal altså være
+    spesifikke, konkrete og reflektere faktiske mål for brukergruppen.
+</p>
+
+<p>
+    Ved brukertesting er det viktig og nyttig for oss som utviklere og
+    designere å observere hvordan testobjektet reagerer til de ulike gitte
+    oppgavene. Det er derfor viktig å kartlegge forhold der brukeren
+</p>
+<ul>
+    <li>
+
+            forstår oppgaven, men ikke klarer utføre innen fornuftig tid
+
+    </li>
+    <li>
+
+            forstår mål, men må prøve ulike fremgangsmåter for å fullføre
+            oppgaven
+
+    </li>
+    <li>
+
+            gir opp
+
+    </li>
+    <li>
+
+            fullfører oppgaven, men ikke den som var spesifisert
+
+    </li>
+    <li>
+
+            blir overrasket/tilfredsstilt
+
+    </li>
+    <li>
+
+            uttrykker frustrasjon, forvirring eller beskylder seg selv for å
+            ikke være i stand til å utføre oppgaven
+
+    </li>
+    <li>
+
+            hevder at noe er feil eller ikke gir mening
+
+    </li>
+    <li>
+
+            kommer med forslag til flow og liknende
+
+    </li>
+</ul>
+<p>
+    Etter å ha testet rundt fem personer (eller til vi ikke blir overrasket
+    over resultatet mer) skal dette gi en indikasjon på hvor vi har oppfylt
+    krav til godt brukergrensesnitt og punkter løsningen trenger forbedringer.
+</p>
+
+<p>
+    Ved brukertesting starter vi med en introduksjon av gruppen og prosjektet.
+    Vi forklarer hensikten med testen (å teste prototypen, ikke personen, for å
+    forbedre grensesnittet) og hvordan den skal gjennomføres. Vi oppfordrer
+    også til at testobjektet bruker tenk-høyt-teknikken, som innebærer at
+    vedkommende sier høyt sine tanker ved hver interaksjon. Dette kan gi oss
+    verdifull informasjon hvor vi blant annet kan kartlegge forvirringspunktene
+    vi ved neste iterasjon kan forbedre. Her er introduksjonen til
+    brukertesten:
+</p>
+
+<p>
+    Hvem vi er: Vi er en tverrfaglig studentgruppe ved NTNU Gløshaugen som i
+    faget “Webteknologi” skal gjennomføre en test av vår besvarelse på
+    prosjektoppgaven som handler om å utvikle en nettside.
+</p>
+
+<p>
+    Forklaring av produktet: I samarbeid med butikken Etikken i Trondheim har
+    vi jobbet med å utvikle et forslag til nettside for dem. Nettsiden skal
+    informere kundene om butikken og deres verdier, samt fungere som branding
+    for bedriften.
+</p>
+
+<p>
+    Hensikten med testen: Vi skal teste en high-fidelity prototype for å
+    forsikre oss om at nettsiden fungerer slik vi ønsker. Ved å gi deg som
+    bruker et sett med oppgaver som du skal gjennomføre med ingen eller lite
+    hjelp, vil vi på empirisk vis kunne undersøke brukervennligheten til
+    produktet.
+</p>
+
+<p>
+    Før vi begynner:
+</p>
+<ul>
+    <li>
+
+            Du kan avbryte testen når som helst, uten begrunnelse.
+
+    </li>
+    <li>
+
+            Vi oppfordrer deg til å tenke høyt og gi oss tilbakemelding for
+            hvert steg du tar i løpet av testen.
+
+    </li>
+    <li>
+
+            Tilbakemeldingene kan omhandle design (både bra og dårlig), ting du
+            synes er forvirrende
+
+    </li>
+    <li>
+
+            Har du noen spørsmål før vi starter?
+
+    </li>
+</ul>
+
+<p>
+    Ved teststart vil vi fortløpende tildele testobjektet oppgaver vedkommende
+    skal gjennomføre. Vi ønsker å teste om nettsiden er intuitiv, lett å
+    navigere seg gjennom, tilfredsstille forventningene bruker har til
+    nettsiden og om alle koblingene stemmer med det mentale modellen til
+    brukeren. Av dette har vi følgende oppgaver som skal hjelpe ved forbedring
+    ved neste iterasjon:
+</p>
+<ol>
+    <li>
+
+            Finn åpningstidene til Etikken
+
+    </li>
+    <li>
+
+            Du har hørt at Etikken selger varer i løsvekt. Finn ut mer om
+            dette.
+
+    </li>
+    <li>
+
+            Du ønsker å handle produkter.
+
+    </li>
+    <li>
+
+            Du ønsker å besøke Etikken og vil finne ut hvor butikken ligger.
+
+    </li>
+    <li>
+
+            Du ønsker å finne ut om varene til Etikken er testet på dyr.
+
+    </li>
+    <li>
+
+            Finn tilbake til forsiden.
+
+    </li>
+</ol>
+
+<p>
+    I tillegg til brukertesten vil vi også sende ut en Google Form for å få inn
+    mer data til analyse. Fordelen med dette er at terskelen for å gi kritisk
+    tilbakemelding er lav, da testen er anonym. Vi får også testet nettsiden på
+    flest mulig ulike enheter, operativsystemer, nettlesere og
+    skjermoppløsninger. Ulempen er at vi ikke vil være i stand til å være
+    tilstede under testingen og vi vil ikke få innblikk i hvordan testobjektet
+    faktisk tenker og utfører de ulike oppgavene. Dette er derimot elementer vi
+    vil få tilgang til ved brukertestingen.
+</p>
+
+<p>
+    Spørreskjemaet i i Google Formen starter likt som brukertesten med en
+    introduksjon av gruppen og prosjektet. Oppgavene fra brukertesten er også
+    vedlagt slik at testobjektet skal ha noe konkret å navigere seg etter.
+    Bruker kan selv bestemme hvor lang tid den vil bruke på testen. I etterkant
+    av testen vil bruker få noen spørsmål den skal svare på. Dette er for å
+    innhente informasjon som er nyttig til videre forbedring av produktet. Det
+    innebærer blant annet informasjon om
+</p>
+<ul>
+    <li>
+
+            hvilken enhet brukeren tok i bruk
+
+    </li>
+    <li>
+
+            operativsystemet
+
+    </li>
+    <li>
+
+            hvilken nettleser vedkommende bruker og internettforbindelsen og
+
+    </li>
+    <li>
+
+            alderen til testobjektet
+
+    </li>
+</ul>
+<p>
+    Videre vil testpersonen få spørsmål om funksjonaliteten til nettsiden.
+    Blant annet om hvordan den synes den fungerer og hastigheten på å laste den
+    inn på en skala fra én til fem. Videre oppfordrer vi også til å gi
+    skriftlige tilbakemeldinger, men dette er ikke et krav.
+</p>
+
+<p>
+    Link til Google Form: <a target="_blank" href="http://www.bit.ly/etikken">bit.ly/etikken</a>
+</p>
+<img class="small" src="../static/img/forms_1.png" alt="form 1">
+<img class="small" src="../static/img/forms_2.png" alt="form 2">
+<img class="small" src="../static/img/forms_3.png" alt="form 3">
+<h2>
+    Testpersoner
+</h2>
+<p>
+    Vi prøvde å finne testpersoner som hovedsakelig oppfyller kravene for
+    målgruppen, det vil si unge, nettvante mennesker som er opptatte av
+    miljøet. For å kartlegge ytterligere problemer med brukervennligheten
+    testet vi i tillegg på personer som ikke var like nettvante. Dette for å
+    være sikker på at målgruppen vi har definert ikke er for begrenset med
+    tanke på faktiske brukere.
+</p>
+
+<p>
+    Under er det listet testpersonene vi kontaktet og deres rolle.
+    Rolle-kolonnen viser til målgruppene vi definerte i P1 (nysgjerrig,
+    trendbevisst og lojal kunde):
+</p>
+<div>
+    <table>
+        <tbody>
+            <tr>
+                <th>
+
+                        Testperson
+
+                </th>
+                <th>
+
+                        Alder
+
+                </th>
+                <th>
+
+                        Yrke
+
+                </th>
+                <th>
+
+                        Rolle
+
+                </th>
+            </tr>
+            <tr>
+                <td>
+
+                        Amalie
+
+                </td>
+                <td>
+
+                        21
+
+                </td>
+                <td>
+
+                        Student
+
+                </td>
+                <td>
+
+                        Nysgjerrig
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                        Ivar
+
+                </td>
+                <td>
+
+                        21
+
+                </td>
+                <td>
+
+                        Student
+
+                </td>
+                <td>
+
+                        Nysgjerrig
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                        Karen
+
+                </td>
+                <td>
+
+                        21
+
+                </td>
+                <td>
+
+                        Student
+
+                </td>
+                <td>
+
+                        Trendbevisst
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                        Gerd
+
+                </td>
+                <td>
+
+                        80
+
+                </td>
+                <td>
+
+                        Pensjonist
+
+                </td>
+                <td>
+
+                        Nysgjerrig
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                        Ingunn
+
+                </td>
+                <td>
+
+                        22
+
+                </td>
+                <td>
+
+                        Student
+
+                </td>
+                <td>
+
+                        Trendbevisst
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                        Petter
+
+                </td>
+                <td>
+
+                        22
+
+                </td>
+                <td>
+
+                        Student
+
+                </td>
+                <td>
+
+                        Nysgjerrig
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                        Ingrid
+
+                </td>
+                <td>
+
+                        25
+
+                </td>
+                <td>
+
+                        Student
+
+                </td>
+                <td>
+
+                        Lojal
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                        Øyvind
+
+                </td>
+                <td>
+
+                        29
+
+                </td>
+                <td>
+
+                        Student
+
+                </td>
+                <td>
+
+                        Nysgjerrig
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br>
+<h2>Testobservasjoner</h2>
+<p><a target="_blank" href="../static/pdf/Brukertestskjema.pdf">Her</a> er en
+  PDF med alle brukertestskjemaene vi fikk ved testing på måten beskrevet under
+  testoppsett. Under er et blankt eksempelskjema på disse. </p>
+  <img class="small" src="../static/img/formExample.png" alt="form example">
+<p>
+    I tillegg sendte vi ut et spørreskjema via Google Forms for å få mer data.
+    Et slikt spørreskjema gir ikke like grundige tilbakemeldinger som å fysisk
+    observere testpersoner, men det lot oss teste nettsiden på flest mulig
+    kombinasjoner av oppløsninger, nettlesere og operativsystemer. Dette
+    avdekket enkelte problemer som kun dukket opp ved uvanlige kombinasjoner av
+    nettleser, enhet eller oppløsning, og var derfor svært nyttig.
+</p>
+
+<p>
+    En fullstendig oppsummering av svarene vi fikk finnes som PDF
+    <a target="_blank" href="../static/pdf/forms_responses.pdf">her</a>,
+    men de fleste som svarte brukte Chrome eller Safari, og
+    rapporterte at de hadde rask internettforbindelse. Det var en god spredning
+    mellom ulike enheter (stasjonær PC, bærbar PC eller mobiltelefon),
+    operativsystemer (iOS, macOS, Android og Windows) og aldersgrupper.
+</p>
+
+<p>
+    Alle som svarte mente det var svært lett å navigere nettsiden, og de fleste
+    rapporterte at den ble lastet inn raskt. Vi fikk flere kommentarer på at
+    siden var ryddig og oversiktlig.
+</p>
+<h2>
+    Brukte plattformer
+</h2>
+<p>
+    Testene ble utført på brukernes egne enheter og nettlesere. PC, Mac, Iphone
+    og Android-telefon var enhetene som ble brukt med Chrome, Safari, Firefox
+    og Waterfox som nettleser.
+</p>
+<h2>
+    Feedback
+</h2>
+<h3>
+    Design
+</h3>
+<p>
+    Vi fikk veldig mange gode tilbakemeldinger på vårt design. Flere
+    kommenterte at de likte at de ikke ble overveldet av informasjon og tekst.
+    Vi fikk også et par negative kommentarer om enkelte designvalg som
+    omhandlet fargevalg. Fargen til boksen for åpningstider ble kommentert at
+    ikke passet helt inn. Etter å ha endret denne til gjennomsiktig hvit ble
+    testerne derimot fornøyde. På mobilskjermer fikk vi kommentarer på at
+    boksen for åpningstider delvis havnet bak logoen og at det var lav
+    oppløsning på bakgrunnsbildet på “Produkter”. Vi fikk også kommentarer om
+    at noen slet med å lese teksten (linkene) som var lysegrønne, derfor endret
+    vi de til mørkegrønne. Det ble også kommentert at dropdown-menyen er lite
+    lesbar på fremsiden, men dette er nå fikset og godkjent som lesbart av
+    brukere.
+</p>
+<h3>
+    Navigasjon
+</h3>
+<p>
+    Flere sa det var logisk navigasjonsstruktur på nettsiden, men noen trodde
+    man fant ut hvor butikken var på “Om oss” isteden for “Kontakt”. Vi fikk
+    også tilbakemelding om at det burde være en dropdown-meny for
+    “Produkter”-siden da denne har mye av samme oppbygning som “Våre verdier”,
+    noe vi endret.
+</p>
+<h3>
+    Innhold
+</h3>
+<p>
+    Vi fikk tilbakemelding på at det var en informativ nettside, men at det
+    samtidig ikke ble for mye informasjon. Det var også en kommentar om at
+    nettbutikken burde vært integrert i nettsiden. Da må designet endres for å
+    gi mulighet til å logge inn, ha handlekurv osv.
+</p>
+<h3>
+    Brukervennlighet
+</h3>
+<p>
+    Det var tilbakemelding på at det kunne vært tydeligere på at mer
+    informasjon finnes ved nedscrolling. Vi fikk også tilbakemelding på at link
+    til sosiale medier kunne vært tydeligere plassert på forsiden.
+</p>
+
+<p>
+    Under er det vedlagt et eksempel på oppsettet til observasjonsskjema og
+    tilhørende oppgaver for brukertesten i tillegg til spørsmål i etterkant av
+    testingen.
+</p>
+
+
+<h2>
+    Videre endringer
+</h2>
+<p>
+    Vi har implementert følgende endringer på bakgrunn av tilbakemeldingene vi
+    fikk under testingen:
+</p>
+<ul>
+    <li>
+
+            Teksten på siden kan i noen situasjoner være vanskelig å lese, for
+            eksempel på “Kontakt oss”. Dette kommer av at vi har prøvd å bruke
+            Etikkens farger mest mulig, og den lyse grønnfargen vi valgte for
+            lenkene der er vanskelig å lese mot hvit bakgrunn. Dette har vi
+            løst ved å bytte til en mørkere grønnfarge på lenkene i det
+            endelige produktet, men den opprinnelige lyse grønnfargen kan sees
+            på noen av bildene i rapporten.
+
+    </li>
+    <li>
+
+            På fremsiden er det en boks som viser åpningstidene, slik at dette
+            er noe av det første brukerne ser når de åpner siden. Denne endret
+            vi farge på etter tilbakemeldinger fra brukerne, fra grønn til
+            gjennomsiktig grå.
+
+    </li>
+    <li>
+
+            Navigasjonsmenyen kunne i noen tilfeller legge knappen for å lukke
+            menyen over lenkene. Dette skjedde på spesifikke oppløsninger og
+            nettlesere, og ble avdekket under testingen. Dette skal nå være
+            fikset.
+
+    </li>
+    <li>
+
+            Vi har implementert en dropdown-meny i navigasjonsmenyen for
+            “Produkter” også, noe enkelte testbrukere etterspurte. Det var
+            opprinnelig kun dropdown-meny for “Våre verdier”.
+
+    </li>
+</ul>
+
+
+<p>
+    Andre problemer funnet under testingen som vi ikke har tid eller mulighet
+    til å fikse:
+</p>
+<ul>
+    <li>
+
+            contact.html bruker over 1 sekund på å laste inn, på grunn av
+            bruken av Google Maps-API. Kan ikke fikses, men resten av siden
+            laster inn raskt og kartet ligger nederst på siden, så det påvirker
+            brukeren i liten eller ingen grad.
+
+    </li>
+    <li>
+
+            Siden virker svært dårlig i IE11, antageligvis på grunn av
+            manglende støtte for JavaScript og picture-tagen i HTML5.
+
+    </li>
+    <li>
+
+            I Firefox går det an å “merke” bakgrunnsbildet på index.html ved å
+            klikke på det 1 gang, noe som gjør hele bildet blått.
+
+    </li>
+    <li>
+
+            Det er ikke alltid åpenbart at man kan scrolle nedover på siden, og
+            at det er mer innhold lenger nede. Dette avhenger av
+            oppløsning/nettleser. Dette kunne kanskje vært løst ved å legge inn
+            en tydelig indikasjon på at brukeren kan scrolle nedover, f.eks.
+            med en pil i bunnen av skjermen. Vi vurderte å implementere dette i
+            P2, men kom fram til at det ikke var nødvendig. Tilbakemeldinger
+            fra brukertesting tyder på at vi burde implementert dette likevel.
+
+    </li>
+    <li>
+
+            På noen av undersidene er det mulighet for å klikke på thumbnails
+            for å åpne en større versjon av bildene. Disse bildene kan så
+            lukkes med en X i hjørnet. Dette fungerer greit, men noen brukere
+            prøvde først å lukke den ved å klikke utenfor ruten (noe som ikke
+            virker). Denne metoden burde vært implementert, fordi det
+            tydeligvis var mer intuitivt.
+
+    </li>
+</ul>
+
+<p>
+    Brukertestene avdekket at det er mye på nettsiden som kunne vært endret for
+    å få den mer brukervennlig. Om vi hadde hatt mer tid ville vi selvfølgelig
+    ha endret på dette for å få en mest mulig brukervennlig nettside, men denne
+    gangen ble det dessverre ikke tid til det.
+</p>
+<h2>
+    Refleksjon
+</h2>
+<p>
+    Vi lærte mye av dette prosjektet. Ingen av oss har lagd en nettside før, så
+    det å jobbe med en nettside gjennom hele prosessen fra idé til et ferdig
+    produkt har vært utrolig lærerikt. Vi har lært at det oppstår uforutsette
+    problem underveis og at produktet ikke blir helt som man så for seg på
+    starten. Det er mange ting man ikke tenker på om brukervennlighet som andre
+    oppfatter som et problem. Fargevalg og kontrast er viktig for lesbarheten.
+    Forklarende ord i menyen er viktige for at brukere velger riktig side når
+    de leter etter informasjon. Dette har vi lært at kan avdekkes med
+    brukertester. Brukertester der man observerer brukeren når vedkommende
+    løser oppgaver med produktet er gull verdt for å avdekke slike feil.
+</p>
+
+<p>
+    Vi har også lært mye om gruppearbeid. Samarbeid har sine fordeler og
+    ulemper. Ulempene er at det er vanskelig å finne møtetidspunkt hvis man er
+    i en gruppe der medlemmene har ulike timeplaner. Fordelene er at vi har
+    ulik kompetanse som vi sammen kan bruke til å løse oppgaven best mulig. Vi
+    får også hjelp av hverandre når det oppstår problem.
+</p>
+
+<p>
+    Oppgaven oppfordret oss til å opprette en nettside for en reell kunde.
+    Dette gjorde at prosjektet føltes mer ekte og at det ferdige produktet
+    faktisk hadde en betydning. Vi lærte mer om hvordan det er å samarbeide med
+    noen eksterne og hvordan man skal gå fram for å tilfredsstille kravene til
+    kunden. Samtidig lærte vi at det kan være vanskelig å få produktet slik
+    kunden ønsker om den ikke gir oss nødvendige ressurser. I løpet av dette
+    prosjektet har vi altså erfart og lært hvordan man arbeider utenom skolens
+    trygge rammer. Dette gjør oss bedre rustet til å angripe liknende
+    situasjoner etter studietiden.
+</p>
+<div>
+
+</div>
+<footer>
+  <p> May Helen, Håvard, Jonatan, Lars-Olav og Marte </p>
+</footer>
+</body>
+</html>

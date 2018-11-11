@@ -133,7 +133,7 @@ osv. Før vi kom til den nåværende løsningen som er gjennomsiktig grått.</p>
 <h3>CSS og JS</h3>
 <p>Vi endte opp med tre CSS-filer; common.css som inneholder alt som er felles
 for alle sidene, underpage.css inneholder de reglene som gjelder for alle sider
-untatt fremsiden og index.css har reglene som kun gjelder på fremsiden. Dette er
+unntatt fremsiden og index.css har reglene som kun gjelder på fremsiden. Dette er
 fordi fremsiden skal se ganske annerledes ut enn undersidene, og vi synes det
 var naturlig og praktisk med en egen CSS-fil her. For JavaScript har
 menuAnimation.js blitt utvidet og endret navn til index.js da den omhandler
@@ -165,7 +165,7 @@ lastes, og de store bildene blir kun lastet ned hvis brukeren trykker på
 bildene. Dette gjør at sider som inneholder mange bilder lastes inn fortere. Det
 er videre mulig å bla i bildene ved hjelp av pil-ikoner. Alle disse funksjonene
 kjører kun på skjermer større enn 960px, da vi kun ønsker å ha denne
-funksjonaliteten tigjengelig nettopp her. Bildet dekker store deler av skjermen
+funksjonaliteten tilgjengelig nettopp her. Bildet dekker store deler av skjermen
 (oppimot 90vh/vw) og siden (bakgrunnen) fades ut med mørk grå gjennomsiktighet.
 Ikonene er animert på hover og active for brukervennlighet.</p>
 
@@ -179,7 +179,7 @@ hvit/gjennomsiktig til grønn. Skyggen til navbaren endres også, hovedsakelig e
 det en fargeendring fra hvit til grå. Dropdownmenyen er også delvis
 gjennomsiktig og grå øverst på fremsiden, den justeres også i denne funksjonen
 slik at den blir hvit samtidig med navbaren ellers. Disse forandringene starter
-når en har scrollet halveis over fremsidebildet og er ferdig når en har scrollet
+når en har scrollet halvveis over fremsidebildet og er ferdig når en har scrollet
 forbi bildet. Alt dette for at fremsiden i utgangspunktet skal ha en “clean
 look”, men gå over til å passe med stilen til resten av siden etter at en har
 scrollet forbi fremsidebildet. Funksjonen imageParallax() skaper en
@@ -190,7 +190,7 @@ setBoxHeight() er den siste hovedfunksjonalitetsfunskjonen. Denne sørger for at
 fremsiden får “slides-looket” vi var ute etter ved å sette høyden til
 seksjonene. Hver seksjon av fremsiden skal dekke hele vinduet minus høyden til
 navbaren. Dette skjer innenfor en vinduhøyde (460px - 1000px), hvor utenfor
-dette seksjonenes høyde størrelse er konstante. Denne høydeendringer skjer ved
+dette seksjonenes høyde størrelse er konstante. Denne høydeendringen skjer ved
 “resize”, altså endring i vinduhøyde. I tillegg til disse 3 funksjonene finnes
 en kontrollfunksjon, controllFunc(), som styrer funksjonene slik at de kun
 kjører på vindubredde > 960px. Hvis vindubredden er mindre settes standardstiler
@@ -204,7 +204,7 @@ disco(event) er tenkt på som et “easter egg” hvorpå hvis brukeren taster
 automatisk ut produktbildet hvert 4. sekund ved hjelp av funksjonen slideshow()
 . Slideshowet er satt opp under Produkter-seksjonen på fremsiden da det blir
 sett til å passe best en slik funksjonalitet. Vi får vist frem forskjellige
-produkter som Etikken tilbyr, noe som bidrer til å oppfyller målet om å opplyse
+produkter som Etikken tilbyr, noe som bidrar til å oppfylle målet om å opplyse
 besøkende av nettsiden om hva Etikken kan tilby. I tillegg skaper det et mer
 dynamisk og levende uttrykk på nettsiden.</p>
 
@@ -459,7 +459,7 @@ sentrerer nå også elementene under hverandre.</p>
 <img src="../static/img/image8.png" class="mobile" alt="Eksempelbilde">
 
 <p>På fremsiden er fremdeles det heldekkende fremsidebilde, den sentrerte logoen og
-åpningstide-rboksen (som er flyttet ned til høyre) det første som møter deg.
+åpningstider-boksen (som er flyttet ned til høyre) det første som møter deg.
 Fremsidebildet er derimot gjort om til å operere som bakgrunnsbilde for
 fremsiden. Ved åpen hamburgermeny tillegges “opacity” til fremsidebildet for
 lesebarhet (denne stilen er allerede til stede på alle undersidene og trengs

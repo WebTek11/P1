@@ -75,3 +75,7 @@ img {
   border-radius: 30px;
   height: 320px;
 }
+
+.small {
+  width: 50%;
+}
